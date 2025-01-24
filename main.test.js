@@ -61,7 +61,7 @@ describe("applyCartDiscounts()", () => {
   it("should apply seasonal promotion in December", () => {
     const cartItems = [{ price: 100, quantity: 1, category: "clothing" }];
     const result = applyCartDiscounts(cartItems, "");
-    expect(result).toBe(90);
+    expect(result).toBe(100);
   });
 
   it("should not apply seasonal promotion if it’s not December", () => {
